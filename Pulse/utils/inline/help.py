@@ -51,11 +51,11 @@ def first_page(_):
 # creating second partition of menu
 
 def second_page(_):
-	controll_button = [InlineKeyboardButton(text="◁", callback_data=f"settings_back_helper_fixed", icon_custom_emoji_id="6255793039705377676"), InlineKeyboardButton(text="HOME", callback_data=f"settingsback_helper" icon_custom_emoji_id="5397733426654626788"), InlineKeyboardButton(text="▷", callback_data=f"settings_back_helper", icon_custom_emoji_id="6255793039705377676")]
+	controll_button = [InlineKeyboardButton(text="◁", callback_data=f"settings_back_helper_fixed", icon_custom_emoji_id="6255793039705377676"), InlineKeyboardButton(text="HOME", callback_data=f"settingsback_helper" , icon_custom_emoji_id="5397733426654626788"), InlineKeyboardButton(text="▷", callback_data=f"settings_back_helper", icon_custom_emoji_id="6255793039705377676")]
 	second_page_menu = InlineKeyboardMarkup(
 		[
-			[InlineKeyboardButton(text=_["H_B_10"], callback_data="help_callback hb10"), InlineKeyboardButton(text=_["H_B_11"], callback_data="help_callback hb11", style=ButtonStyle.PRIMARY), InlineKeyboardButton(text=_["H_B_12"], callback_data="help_callback hb12")],
-			[InlineKeyboardButton(text=_["H_B_13"], callback_data="help_callback hb13", style=ButtonStyle.SUCCESS), InlineKeyboardButton(text=_["H_B_14"], callback_data="help_callback hb14"), InlineKeyboardButton(text=_["H_B_15"], callback_data="help_callback hb15")],
+			[InlineKeyboardButton(text=_["H_B_10"], callback_data="help_callback hb10"), InlineKeyboardButton(text=_["H_B_11"], callback_data="help_callback hb11"), InlineKeyboardButton(text=_["H_B_12"], callback_data="help_callback hb12")],
+			[InlineKeyboardButton(text=_["H_B_13"], callback_data="help_callback hb13"), InlineKeyboardButton(text=_["H_B_14"], callback_data="help_callback hb14"), InlineKeyboardButton(text=_["H_B_15"], callback_data="help_callback hb15")],
 			[InlineKeyboardButton(text=_["H_B_16"], callback_data="help_callback hb16", )],
 			controll_button,
 		]
