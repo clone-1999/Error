@@ -31,14 +31,11 @@ def start_panel(_):
         [
             InlineKeyboardButton(
                 text=_["S_B_1"], 
-                url=f"https://t.me/{app.username}?startgroup=true",
-                style=ButtonStyle.PRIMARY,
-                icon_custom_emoji_id="6255793039705377676"
+                url=f"https://t.me/{app.username}?startgroup=true"
             ),
             InlineKeyboardButton(
                 text=_["S_B_2"], 
                 url=config.SUPPORT_CHAT,
-                style=ButtonStyle.SUCCESS,
                 icon_custom_emoji_id="5397733426654626788"
             ),
         ],
@@ -51,21 +48,17 @@ def private_panel(_):
         [
             InlineKeyboardButton(
                 text=_["S_B_3"],
-                url=f"https://t.me/{app.username}?startgroup=true",
-                style=ButtonStyle.PRIMARY,
-                icon_custom_emoji_id="6255793039705377676"
+                url=f"https://t.me/{app.username}?startgroup=true"
             )
         ],
-        [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper", style=ButtonStyle.DANGER, icon_custom_emoji_id="6152069270269334526")],
+        [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper", icon_custom_emoji_id="5818802717455290572")],
         [
-            InlineKeyboardButton(text="🎧", url="https://t.me/Zcziiyy", style=ButtonStyle.SUCCESS),
-            InlineKeyboardButton(text="🫦", url="https://t.me/Zcziiyy", style=ButtonStyle.PRIMARY),
+            InlineKeyboardButton(text="sυᴘᴘσʀᴛ", url="https://t.me/+JmZajlpyTJxlZTE1"),
+            InlineKeyboardButton(text="υᴘᴅᴧᴛєs", url="https://t.me/+OqS-RsnNrMtjOTll"),
         ],
         [
-            InlineKeyboardButton("𝐔ᴘᴅᴀᴛᴇs 📢", url="https://t.me/Zcziiyy", style=ButtonStyle.PRIMARY, icon_custom_emoji_id="5343597635926245720")            
+            InlineKeyboardButton("❍ᴡηєʀ", url="https://t.me/+43lfMuxCp3I3ZDRl", icon_custom_emoji_id="5818802717455290572")            
         ],
-        [
-            InlineKeyboardButton("• ʙᴏᴛ ɪɴғᴏ •", callback_data="bot_info_data", style=ButtonStyle.SUCCESS, icon_custom_emoji_id="5235682785863153026"),
-        ],
+    
     ]
     return buttons
