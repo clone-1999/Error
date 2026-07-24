@@ -48,7 +48,7 @@ class Sagar(Client):
         try:
             await self.send_message(
                 chat_id=config.LOGGER_ID,
-                text=f"<blockquote><emoji id='5397733426654626788'>✨</emoji> <b>{self.mention} sᴛᴀʀᴛᴇᴅ </b>\n\n<b>ɪᴅ :</b> <code>{self.id}</code>\n<b>ɴᴀᴍᴇ :</b> {self.name}\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{self.username}</blockquote>",
+                text=f"<blockquote><emoji id='6095767501763779307'>✨</emoji> <b>{self.mention} sᴛᴀʀᴛᴇᴅ </b>\n\n<b>ɪᴅ :</b> <code>{self.id}</code>\n<b>ɴᴀᴍᴇ :</b> {self.name}\n<b>ᴜsᴇʀɴᴀᴍᴇ :</b> @{self.username}</blockquote>",
             )
         except (errors.ChannelInvalid, errors.PeerIdInvalid):
             LOGGER(__name__).error(
