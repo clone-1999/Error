@@ -62,29 +62,19 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         # Row 2: Three new buttons (Backward, Download, Forward)
         [
-            InlineKeyboardButton(text="⪻  -30s", callback_data=f"SEEKBACKWARD|{chat_id}|30", style=ButtonStyle.DEFAULT),
-            InlineKeyboardButton(text="📥", callback_data=f"DOWNLOAD|{chat_id}", style=ButtonStyle.DEFAULT),
-            InlineKeyboardButton(text="+30s  ⪼", callback_data=f"SEEKFORWARD|{chat_id}|30", style=ButtonStyle.DEFAULT),
+            InlineKeyboardButton(text="⪻  -30s", callback_data=f"SEEKBACKWARD|{chat_id}|30"),
+            InlineKeyboardButton(text="+30s  ⪼", callback_data=f"SEEKFORWARD|{chat_id}|30"),
         ],
         # Row 3: Main control buttons
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}", style=ButtonStyle.SUCCESS),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}", style=ButtonStyle.PRIMARY),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}", style=ButtonStyle.PRIMARY),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}", style=ButtonStyle.DANGER),
-        ],
-        # Row 3: Support
-        [
-            InlineKeyboardButton(text="✰ ᴜᴘᴅᴧᴛᴇ ✰", url=SUPPORT_CHANNEL, style=ButtonStyle.PRIMARY),
-            InlineKeyboardButton(text="✰ sᴜᴘᴘᴏꝛᴛ ✰", url=SUPPORT_CHAT, style=ButtonStyle.PRIMARY)
-        ],
-        # Row 4: Autoplay button
-        [
-            InlineKeyboardButton(text="𝐀ᴜᴛᴏ ➜ " + ("𝐎ɴ" if getattr(__import__("Pulse.platforms.Youtube", fromlist=["is_autoplay_on"]), "is_autoplay_on", lambda x: False)(chat_id) else "𝐎ғғ"), callback_data=f"Autoplay_Toggle|{chat_id}", style=ButtonStyle.DEFAULT),
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         # Row 5: Close button
         [
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"].lower(), callback_data="close", style=ButtonStyle.DANGER)
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"].lower(), callback_data="close")
         ]
     ]
     return buttons
@@ -94,29 +84,21 @@ def stream_markup(_, chat_id):
     buttons = [
         # Row 1: Seek / Download
         [
-            InlineKeyboardButton(text="⪻  -30s", callback_data=f"SEEKBACKWARD|{chat_id}|30", style=ButtonStyle.DEFAULT),
-            InlineKeyboardButton(text="📥", callback_data=f"DOWNLOAD|{chat_id}", style=ButtonStyle.DEFAULT),
-            InlineKeyboardButton(text="+30s  ⪼", callback_data=f"SEEKFORWARD|{chat_id}|30", style=ButtonStyle.DEFAULT),
+            InlineKeyboardButton(text="⪻  -30s", callback_data=f"SEEKBACKWARD|{chat_id}|30"),
+            InlineKeyboardButton(text="+30s  ⪼", callback_data=f"SEEKFORWARD|{chat_id}|30"),
         ],
         # Row 2: Controls
         [
-            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}", style=ButtonStyle.SUCCESS),
-            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}", style=ButtonStyle.PRIMARY),
-            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}", style=ButtonStyle.PRIMARY),
-            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}", style=ButtonStyle.DANGER),
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         # Row 3: Support
+        
+        
         [
-            InlineKeyboardButton(text="✰ ᴜᴘᴅᴧᴛᴇ ✰", url=SUPPORT_CHANNEL, style=ButtonStyle.PRIMARY),
-            InlineKeyboardButton(text="✰ sᴜᴘᴘᴏꝛᴛ ✰", url=SUPPORT_CHAT, style=ButtonStyle.PRIMARY)
-        ],
-        # Row 4: Autoplay
-        [
-            InlineKeyboardButton(text="𝐀ᴜᴛᴏ ➜ " + ("𝐎ɴ" if getattr(__import__("Pulse.platforms.Youtube", fromlist=["is_autoplay_on"]), "is_autoplay_on", lambda x: False)(chat_id) else "𝐎ғғ"), callback_data=f"Autoplay_Toggle|{chat_id}", style=ButtonStyle.DEFAULT),
-        ],
-        # Row 5: Close
-        [
-            InlineKeyboardButton(text=_["CLOSE_BUTTON"].lower(), callback_data="close", style=ButtonStyle.DANGER)
+            InlineKeyboardButton(text=_["CLOSE_BUTTON"].lower(), callback_data="close")
         ]
     ]
     return buttons
