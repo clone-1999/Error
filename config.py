@@ -36,17 +36,17 @@ BOT_TOKEN = getenv("BOT_TOKEN", "7000859933:AAEnaU9196qHT0bSyaoqROwmc_XCImYhP4E"
 
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://PulseNew:Mongo@cluster0.zllsvlo.mongodb.net/?appName=Cluster0")
 
-DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 54000))
+DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 59000))
 
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "54000")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "59000")
 )
 
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002022622141"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1001"))
 
-OWNER_ID = int(getenv("OWNER_ID", "6625936112"))
+OWNER_ID = int(getenv("OWNER_ID", ""))
 
-BOT_USERNAME = getenv("BOT_USERNAME" , "@Syn_Ixbot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "")
 
 COMMAND_HANDLER = getenv("COMMAND_HANDLER", "! / .").split() + [""]
 
@@ -60,15 +60,15 @@ PING_URL = getenv("PING_URL", "")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/TrickBySaqib/PulseMusic",
+    "",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
-    "GIT_TOKEN", ""
+    "GIT_TOKEN", "https://github.com/core-999/Songbbgood"
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Zcziiyy")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DEVTAL")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+OqS-RsnNrMtjOTll")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+JmZajlpyTJxlZTE1")
 
 
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -112,18 +112,18 @@ clean = {}
 autoclean = []
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/kzcoir.jpg"
+    "START_IMG_URL", "https://i.ibb.co/0VnyqcDm/x.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org/file/ac589b90138d32ef749e3-7182273a0f23f0c76e.jpg"
+    "PING_IMG_URL", "https://i.ibb.co/wFGtd27V/x.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/8b3614b932b12996c6378-5fff06ef0dee7a3106.jpg"
-STATS_IMG_URL = "https://graph.org/file/8b3614b932b12996c6378-5fff06ef0dee7a3106.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org/file/8b3614b932b12996c6378-5fff06ef0dee7a3106.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org/file/8b3614b932b12996c6378-5fff06ef0dee7a3106.jpg"
-STREAM_IMG_URL = "https://graph.org/file/8b3614b932b12996c6378-5fff06ef0dee7a3106.jpg"
+PLAYLIST_IMG_URL = "https://i.ibb.co/0VnyqcDm/x.jpg"
+STATS_IMG_URL = "https://i.ibb.co/0VnyqcDm/x.jpg"
+TELEGRAM_AUDIO_URL = "https://i.ibb.co/0VnyqcDm/x.jpg"
+TELEGRAM_VIDEO_URL = "https://i.ibb.co/0VnyqcDm/x.jpg"
+STREAM_IMG_URL = "https://i.ibb.co/0VnyqcDm/x.jpg"  
 SOUNCLOUD_IMG_URL = "https://graph.org/file/ac589b90138d32ef749e3-7182273a0f23f0c76e.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/ac589b90138d32ef749e3-7182273a0f23f0c76e.jpg"
+YOUTUBE_IMG_URL = "https://i.ibb.co/0VnyqcDm/x.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/ac589b90138d32ef749e3-7182273a0f23f0c76e.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/ac589b90138d32ef749e3-7182273a0f23f0c76e.jpg"
 SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/ac589b90138d32ef749e3-7182273a0f23f0c76e.jpg"
