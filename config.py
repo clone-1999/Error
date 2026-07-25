@@ -60,7 +60,7 @@ PING_URL = getenv("PING_URL", "")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/core-999/Songbbgood",
+    "https://github.com/clone-1999/Error",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
