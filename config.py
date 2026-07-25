@@ -60,11 +60,11 @@ PING_URL = getenv("PING_URL", "")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "",
+    "https://github.com/core-999/Songbbgood",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
-    "GIT_TOKEN", "https://github.com/core-999/Songbbgood"
+    "GIT_TOKEN", ""
 )  # Fill this variable if your upstream repository is private
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+OqS-RsnNrMtjOTll")
